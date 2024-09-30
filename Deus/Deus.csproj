@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Dosis.ttf" />
+    <None Remove="Images\dollar.png" />
+    <None Remove="Images\phone1.png" />
+    <None Remove="Images\ProfilePicture.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Crc32.NET" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ProjectBlockchain\ProjectBlockchain\ProjectBlockchain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Dosis.ttf" />
+    <Resource Include="Images\dollar.png" />
+    <Resource Include="Images\phone1.png" />
+    <Resource Include="Images\ProfilePicture.png" />
+  </ItemGroup>
+
+</Project>
